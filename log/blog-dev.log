@@ -1,0 +1,943 @@
+2019-11-26 12:38:09.850  INFO 14840 --- [restartedMain] com.qxq.BlogApplication                  : Starting BlogApplication on DESKTOP-qinxinquan with PID 14840 (D:\IDEA_Project\blog\target\classes started by DELL in D:\IDEA_Project\blog)
+2019-11-26 12:38:09.885 DEBUG 14840 --- [restartedMain] com.qxq.BlogApplication                  : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-11-26 12:38:09.886  INFO 14840 --- [restartedMain] com.qxq.BlogApplication                  : The following profiles are active: dev
+2019-11-26 12:38:10.038  INFO 14840 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\maven_repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-11-26 12:38:10.040  INFO 14840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-26 12:38:10.040  INFO 14840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-26 12:38:12.779  INFO 14840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 12:38:12.959  INFO 14840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 161ms. Found 5 repository interfaces.
+2019-11-26 12:38:13.806  INFO 14840 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 12:38:15.599  INFO 14840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 12:38:15.720  INFO 14840 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 12:38:15.721  INFO 14840 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 12:38:16.088  INFO 14840 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 12:38:16.089  INFO 14840 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6049 ms
+2019-11-26 12:38:16.709  INFO 14840 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 12:38:16.920  INFO 14840 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 12:38:17.546  INFO 14840 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 12:38:18.774  INFO 14840 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 12:38:20.180  INFO 14840 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 12:38:20.250  INFO 14840 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-11-26 12:38:23.152  INFO 14840 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 12:38:23.171  INFO 14840 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 12:38:23.438  INFO 14840 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-26 12:38:28.883  WARN 14840 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 12:38:30.024  INFO 14840 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 12:38:30.346  INFO 14840 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 12:38:31.313  INFO 14840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 12:38:31.319  INFO 14840 --- [restartedMain] com.qxq.BlogApplication                  : Started BlogApplication in 24.346 seconds (JVM running for 29.997)
+2019-11-26 12:39:33.197  INFO 14840 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 12:39:33.199  INFO 14840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 12:39:33.220  INFO 14840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2019-11-26 12:39:33.313  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 12:39:33.628  WARN 14840 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-11-26 12:39:33.648  WARN 14840 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-11-26 12:39:33.785  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 12:39:36.135  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:39:36.149  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:39:47.779  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 12:39:47.808  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 12:39:48.721  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:39:48.732  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:49:56.130  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 12:49:56.155  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 12:49:57.038  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:49:57.046  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:50:17.365  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/5', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[5, {}]}
+2019-11-26 12:50:17.690  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:50:18.903  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:50:18.914  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:50:19.216  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/5', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[5, {}]}
+2019-11-26 12:50:19.332  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:51:32.417  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 12:51:32.442  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 12:51:33.366  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:51:33.377  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:51:37.967  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[3, {}]}
+2019-11-26 12:51:38.030  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:51:38.719  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:51:38.728  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:51:39.027  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[3, {}]}
+2019-11-26 12:51:39.079  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:51:46.425  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 12:51:46.509  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 12:51:47.260  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:51:47.270  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:51:53.248  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 3, {}]}
+2019-11-26 12:51:53.263  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 12:51:53.945  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:51:53.953  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:51:58.354  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/2', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 2, {}]}
+2019-11-26 12:51:58.368  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 12:51:59.098  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:51:59.107  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:52:04.072  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 12:52:04.094  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 12:52:04.783  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:52:04.789  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:52:09.722  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/5', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 5, {}]}
+2019-11-26 12:52:09.732  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 12:52:10.407  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:52:10.414  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:52:14.730  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/4', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 4, {}]}
+2019-11-26 12:52:14.740  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 12:52:15.543  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:52:15.550  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:52:20.171  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 1, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 12:52:20.187  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 12:52:20.893  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:52:20.900  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:52:22.757  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 1, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 12:52:22.772  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 12:52:23.443  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:52:23.450  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:52:25.304  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[3, {}]}
+2019-11-26 12:52:25.408  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:52:26.078  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:52:26.085  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:52:26.391  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[3, {}]}
+2019-11-26 12:52:26.401  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:52:30.126  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[3, {}]}
+2019-11-26 12:52:30.203  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:52:30.925  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:52:30.931  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:52:31.192  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[3, {}]}
+2019-11-26 12:52:31.201  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:52:37.886  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.search', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 刻意, {}]}
+2019-11-26 12:52:37.895  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : search
+2019-11-26 12:52:38.624  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:52:38.629  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:52:49.466  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/5', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[5, {}]}
+2019-11-26 12:52:49.562  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:52:50.223  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:52:50.229  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:52:50.479  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/5', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[5, {}]}
+2019-11-26 12:52:50.482  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:52:56.133  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[3, {}]}
+2019-11-26 12:52:56.210  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:52:56.879  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:52:56.885  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:52:57.140  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[3, {}]}
+2019-11-26 12:52:57.151  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:52:58.793  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[3, {}]}
+2019-11-26 12:52:58.851  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:52:59.532  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:52:59.540  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:52:59.795  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[3, {}]}
+2019-11-26 12:52:59.806  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:53:01.494  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.AboutShowController.about', args=[]}
+2019-11-26 12:53:01.497  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : abouts
+2019-11-26 12:53:02.140  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:53:02.148  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:53:38.995  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.search', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 刻意, {}]}
+2019-11-26 12:53:39.002  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : search
+2019-11-26 12:53:39.674  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:53:39.680  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:53:44.086  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 12:53:44.094  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 12:53:44.781  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:53:44.788  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:53:48.674  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/7', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[7, {}]}
+2019-11-26 12:53:48.733  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:53:49.462  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:53:49.469  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:53:49.740  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/7', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[7, {}]}
+2019-11-26 12:53:49.743  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:53:53.400  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/6', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 6, {}]}
+2019-11-26 12:53:53.408  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 12:53:54.031  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:53:54.039  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:53:56.058  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 12:53:56.069  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 12:53:56.722  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:53:56.727  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:53:58.784  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/4', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 4, {}]}
+2019-11-26 12:53:58.797  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 12:53:59.410  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:53:59.416  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:54:09.071  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/4', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 4, {}]}
+2019-11-26 12:54:09.079  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 12:54:09.736  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:54:09.741  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:54:12.069  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/6', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[6, {}]}
+2019-11-26 12:54:12.133  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:54:12.786  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:54:12.791  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:54:13.077  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/6', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[6, {}]}
+2019-11-26 12:54:13.080  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:54:17.989  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.ArchiveShowController.archives', args=[{}]}
+2019-11-26 12:54:18.039  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : archives
+2019-11-26 12:54:18.693  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:54:18.699  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:54:31.516  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[3, {}]}
+2019-11-26 12:54:31.594  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:54:32.250  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:54:32.256  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:54:32.525  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[3, {}]}
+2019-11-26 12:54:32.535  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:54:35.523  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/7', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[7, {}]}
+2019-11-26 12:54:35.699  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:54:36.608  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:54:36.615  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:54:36.860  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/7', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[7, {}]}
+2019-11-26 12:54:36.862  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:54:40.931  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.AboutShowController.about', args=[]}
+2019-11-26 12:54:40.932  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : abouts
+2019-11-26 12:54:41.587  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:54:41.593  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:54:53.537  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 12:54:53.554  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 12:54:54.221  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:54:54.228  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:54:56.324  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[1, {}]}
+2019-11-26 12:54:56.437  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:54:57.145  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:54:57.152  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:54:57.549  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[1, {}]}
+2019-11-26 12:54:57.569  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:56:15.796  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.AboutShowController.about', args=[]}
+2019-11-26 12:56:15.796  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : abouts
+2019-11-26 12:56:16.446  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:56:16.452  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:56:26.267  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.search', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 刻意, {}]}
+2019-11-26 12:56:26.272  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : search
+2019-11-26 12:56:26.894  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:56:26.900  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:56:40.523 ERROR 14840 --- [http-nio-8080-exec-4] c.q.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/search，Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:201)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:421)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:449)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:393)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:56:40.525  WARN 14840 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-11-26 12:56:41.217  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:56:41.222  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:56:53.673 ERROR 14840 --- [http-nio-8080-exec-9] c.q.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/search，Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:201)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:421)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:449)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:393)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:56:53.675  WARN 14840 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-11-26 12:56:54.487  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:56:54.494  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:57:01.735  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 12:57:01.748  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 12:57:02.623  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:57:02.630  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:57:03.829  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 12:57:03.845  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 12:57:04.521  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:57:04.527  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:58:11.393  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 12:58:11.401  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 12:58:12.777  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:58:12.784  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:58:14.400  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 12:58:14.409  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 12:58:15.089  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:58:15.094  INFO 14840 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:58:27.238  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.search', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 刻意, {}]}
+2019-11-26 12:58:27.243  INFO 14840 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : search
+2019-11-26 12:58:28.371  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:58:28.377  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:58:29.207 ERROR 14840 --- [http-nio-8080-exec-4] c.q.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/search，Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:201)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:421)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:449)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:393)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:58:29.208  WARN 14840 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-11-26 12:58:30.218  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:58:30.225  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:58:39.865 ERROR 14840 --- [http-nio-8080-exec-5] c.q.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/search，Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:201)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:421)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:449)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:393)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:58:39.865  WARN 14840 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-11-26 12:58:40.667  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:58:40.674  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:58:50.248 ERROR 14840 --- [http-nio-8080-exec-2] c.q.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/search，Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:201)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:421)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:449)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:393)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:58:50.249  WARN 14840 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-11-26 12:58:51.059  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:58:51.065  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:59:00.441  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/5', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[5, {}]}
+2019-11-26 12:59:00.509  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:59:01.439  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:59:01.446  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:59:01.625  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/5', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[5, {}]}
+2019-11-26 12:59:01.627  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:59:08.803  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[3, {}]}
+2019-11-26 12:59:08.985  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:59:09.651  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:59:09.656  INFO 14840 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:59:09.912  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[3, {}]}
+2019-11-26 12:59:09.923  INFO 14840 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 12:59:12.150  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[3, {}]}
+2019-11-26 12:59:12.204  INFO 14840 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 12:59:12.909  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 12:59:12.916  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 12:59:13.205  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[3, {}]}
+2019-11-26 12:59:13.212  INFO 14840 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 13:00:52.726  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:00:52.735  INFO 14840 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:00:53.497  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:00:53.501  INFO 14840 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:00:54.626  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:00:54.635  INFO 14840 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:00:55.331  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:00:55.336  INFO 14840 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:01:44.649  INFO 18152 --- [restartedMain] com.qxq.BlogApplication                  : Starting BlogApplication on DESKTOP-qinxinquan with PID 18152 (D:\IDEA_Project\blog\target\classes started by DELL in D:\IDEA_Project\blog)
+2019-11-26 13:01:44.654 DEBUG 18152 --- [restartedMain] com.qxq.BlogApplication                  : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-11-26 13:01:44.655  INFO 18152 --- [restartedMain] com.qxq.BlogApplication                  : The following profiles are active: dev
+2019-11-26 13:01:44.774  INFO 18152 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\maven_repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-11-26 13:01:44.776  INFO 18152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-26 13:01:44.776  INFO 18152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-26 13:01:46.219  INFO 18152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:01:46.401  INFO 18152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 164ms. Found 5 repository interfaces.
+2019-11-26 13:01:47.102  INFO 18152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:01:48.055  INFO 18152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:01:48.081  INFO 18152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:01:48.082  INFO 18152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:01:48.349  INFO 18152 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:01:48.350  INFO 18152 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3529 ms
+2019-11-26 13:01:48.905  INFO 18152 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:01:49.041  INFO 18152 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:01:49.276  INFO 18152 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:01:49.486  INFO 18152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:01:49.713  INFO 18152 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:01:49.748  INFO 18152 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-11-26 13:01:51.401  INFO 18152 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:01:51.416  INFO 18152 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:01:51.554  INFO 18152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-26 13:01:53.522  WARN 18152 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:01:53.853  INFO 18152 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:01:53.985  INFO 18152 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:01:54.727  INFO 18152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:01:54.730  INFO 18152 --- [restartedMain] com.qxq.BlogApplication                  : Started BlogApplication in 11.623 seconds (JVM running for 14.95)
+2019-11-26 13:02:04.863  INFO 18152 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:02:04.864  INFO 18152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:02:04.938  INFO 18152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2019-11-26 13:02:05.005  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 13:02:05.196  WARN 18152 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-11-26 13:02:05.217  WARN 18152 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-11-26 13:02:05.227  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 13:02:06.628  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:02:06.640  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:02:10.300  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.search', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 刻意, {}]}
+2019-11-26 13:02:10.317  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : search
+2019-11-26 13:02:10.999  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:02:11.009  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:02:12.217 ERROR 18152 --- [http-nio-8080-exec-9] c.q.handler.ControllerExceptionHandler   : Requst URL : http://localhost:8080/search，Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:201)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:421)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:449)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getHandlerInternal(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:393)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 13:02:12.218  WARN 18152 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-11-26 13:02:12.894  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:02:12.906  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:02:38.838  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[3, {}]}
+2019-11-26 13:02:39.029  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 13:02:39.756  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:02:39.806  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:02:40.028  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[3, {}]}
+2019-11-26 13:02:40.092  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 13:03:24.033  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:03:24.075  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:03:24.832  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:03:24.844  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:03:31.765  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.ArchiveShowController.archives', args=[{}]}
+2019-11-26 13:03:31.791  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : archives
+2019-11-26 13:03:32.461  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:03:32.470  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:03:33.445  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 13:03:33.465  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 13:03:34.148  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:03:34.158  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:03:37.778  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 13:03:37.805  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 13:03:38.473  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:03:38.482  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:09:08.143  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 13:09:08.166  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 13:09:09.006  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:09:09.014  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:09:17.118  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:09:17.134  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 13:09:17.804  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:09:17.812  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:09:20.426  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:09:20.437  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 13:09:21.110  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:09:21.117  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:09:29.878  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:09:29.890  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:09:30.563  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:09:30.572  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:09:38.283  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:09:38.295  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:09:39.003  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:09:39.012  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:09:49.435  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:09:49.444  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 13:09:50.085  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:09:50.092  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:11:42.432  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.search', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 刻意, {}]}
+2019-11-26 13:11:42.440  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : search
+2019-11-26 13:11:43.107  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:11:43.115  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:11:54.787  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[3, {}]}
+2019-11-26 13:11:54.898  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 13:11:55.583  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:11:55.592  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:11:55.950  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[3, {}]}
+2019-11-26 13:11:55.959  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 13:11:57.083  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[3, {}]}
+2019-11-26 13:11:57.152  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 13:11:57.815  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:11:57.823  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:11:58.083  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[3, {}]}
+2019-11-26 13:11:58.092  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 13:12:09.302  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:12:09.310  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 13:12:09.997  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:12:10.004  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:13:03.895  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:13:03.904  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 13:13:04.617  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:13:04.624  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:13:57.359  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:13:57.370  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 13:13:58.569  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:13:58.577  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:14:05.429  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:14:05.440  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:14:06.107  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:14:06.114  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:14:10.448  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/6', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 6, {}]}
+2019-11-26 13:14:10.460  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:14:11.089  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:14:11.095  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:14:12.778  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 3, {}]}
+2019-11-26 13:14:12.789  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:14:13.534  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:14:13.542  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:14:15.401  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 3, {}]}
+2019-11-26 13:14:15.412  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:14:16.070  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:14:16.078  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:14:18.518  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 3, {}]}
+2019-11-26 13:14:18.528  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:14:19.209  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:14:19.215  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:15:31.371  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 3, {}]}
+2019-11-26 13:15:31.384  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:15:32.883  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:15:32.890  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:15:39.119  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.AboutShowController.about', args=[]}
+2019-11-26 13:15:39.123  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : abouts
+2019-11-26 13:15:39.751  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:15:39.757  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:15:42.011  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.ArchiveShowController.archives', args=[{}]}
+2019-11-26 13:15:42.023  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : archives
+2019-11-26 13:15:42.639  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:15:42.644  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:15:44.991  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[1, {}]}
+2019-11-26 13:15:45.129  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 13:15:45.842  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:15:45.848  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:15:46.133  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[1, {}]}
+2019-11-26 13:15:46.153  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 13:15:48.613  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 13:15:48.628  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 13:15:49.278  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:15:49.284  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:15:55.771  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 13:15:55.786  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 13:15:56.423  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:15:56.429  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:16:18.312  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 13:16:18.328  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 13:16:19.069  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:16:19.074  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:17:13.692  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:17:13.700  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 13:17:14.413  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:17:14.420  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:19:26.736  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 13:19:26.750  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 13:19:27.564  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:19:27.571  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:19:29.424  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/4', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 4, {}]}
+2019-11-26 13:19:29.434  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 13:19:30.074  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:19:30.080  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:19:52.190  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 1, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 13:19:52.203  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 13:19:52.960  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:19:52.967  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:19:55.255  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 3, {}]}
+2019-11-26 13:19:55.266  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 13:19:56.116  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:19:56.123  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:20:47.098  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 3, {}]}
+2019-11-26 13:20:47.104  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 13:20:47.710  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:20:47.716  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:21:02.995  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.search', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 刻意, {}]}
+2019-11-26 13:21:03.002  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : search
+2019-11-26 13:21:03.621  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:21:03.626  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:21:20.248  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:21:20.253  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 13:21:20.890  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:21:20.894  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:21:27.214  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:21:27.222  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:21:27.818  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:21:27.823  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:21:36.738  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/6', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 6, {}]}
+2019-11-26 13:21:36.745  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:21:37.461  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:21:37.466  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:21:40.414  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/3', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 3, {}]}
+2019-11-26 13:21:40.423  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:21:41.016  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:21:41.021  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:21:44.879  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/6', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 6, {}]}
+2019-11-26 13:21:44.886  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:21:45.536  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:21:45.541  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:21:50.862  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:21:50.867  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : types
+2019-11-26 13:21:51.403  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:21:51.408  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:21:59.466  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.TagShowController.tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2019-11-26 13:21:59.474  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : tags
+2019-11-26 13:22:00.296  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:22:00.304  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:22:05.754  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 13:22:05.767  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 13:22:06.352  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:22:06.357  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:22:09.579  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 1, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 13:22:09.589  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 13:22:10.191  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:22:10.196  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:22:46.243  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:22:46.248  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:03.918  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:03.923  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:13.077  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:13.085  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:14.987  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:14.992  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:15.823  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:15.828  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:16.604  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:16.609  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:19.844  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:19.850  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:20.713  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:20.719  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:24.137  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:24.142  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:30.789  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:30.794  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:31.943  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:31.949  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:38.335  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:38.341  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:42.035  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:42.040  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:48.437  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:48.443  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:23:49.878  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:23:49.883  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:24:33.520  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:24:33.525  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:25:19.481  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:25:19.485  INFO 18152 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:25:33.388  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:25:33.393  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:25:43.453  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:25:43.459  INFO 18152 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:26:13.026  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:26:13.030  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:26:14.257  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:26:14.261  INFO 18152 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:26:36.484  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:26:36.488  INFO 18152 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:26:44.599  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:26:44.603  INFO 18152 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:27:28.449  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:27:28.453  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:27:33.618  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:27:33.622  INFO 18152 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:27:38.220  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:27:38.225  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:28:25.743  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:28:25.748  INFO 18152 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:28:35.754  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:28:35.759  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:34:47.741  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:34:47.747  INFO 18152 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:35:35.500  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:35:35.505  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:36:25.448  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:36:25.452  INFO 18152 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:36:28.672  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:36:28.677  INFO 18152 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:36:42.302  INFO 18096 --- [restartedMain] com.qxq.BlogApplication                  : Starting BlogApplication on DESKTOP-qinxinquan with PID 18096 (D:\IDEA_Project\blog\target\classes started by DELL in D:\IDEA_Project\blog)
+2019-11-26 13:36:42.308 DEBUG 18096 --- [restartedMain] com.qxq.BlogApplication                  : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-11-26 13:36:42.311  INFO 18096 --- [restartedMain] com.qxq.BlogApplication                  : The following profiles are active: dev
+2019-11-26 13:36:42.421  INFO 18096 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\maven_repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/maven_repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-11-26 13:36:42.422  INFO 18096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-26 13:36:42.423  INFO 18096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-26 13:36:43.454  INFO 18096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:36:43.591  INFO 18096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122ms. Found 5 repository interfaces.
+2019-11-26 13:36:44.189  INFO 18096 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:36:44.882  INFO 18096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:36:44.894  INFO 18096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:36:44.894  INFO 18096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:36:45.140  INFO 18096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:36:45.140  INFO 18096 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2717 ms
+2019-11-26 13:36:45.536  INFO 18096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:36:45.626  INFO 18096 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:36:45.787  INFO 18096 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:36:45.909  INFO 18096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:36:46.059  INFO 18096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:36:46.082  INFO 18096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-11-26 13:36:47.352  INFO 18096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:36:47.361  INFO 18096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:36:47.453  INFO 18096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-26 13:36:48.775  WARN 18096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:36:49.095  INFO 18096 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:36:49.269  INFO 18096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:36:50.115  INFO 18096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:36:50.120  INFO 18096 --- [restartedMain] com.qxq.BlogApplication                  : Started BlogApplication in 9.344 seconds (JVM running for 11.293)
+2019-11-26 13:36:54.390  INFO 18096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:36:54.390  INFO 18096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:36:54.408  INFO 18096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-11-26 13:36:59.744  INFO 18096 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:36:59.798  INFO 18096 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:37:02.353  INFO 18096 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:37:02.381  INFO 18096 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:38:47.916  INFO 18096 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:38:47.928  INFO 18096 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:43:58.198  INFO 18096 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:43:58.211  INFO 18096 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:44:31.888  INFO 18096 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:44:31.899  INFO 18096 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:46:19.356  INFO 18096 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.blog', args=[1, {}]}
+2019-11-26 13:46:19.587  INFO 18096 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : blog
+2019-11-26 13:46:20.491  INFO 18096 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:46:20.503  INFO 18096 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:46:20.674  INFO 18096 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/1', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.CommentController.comments', args=[1, {}]}
+2019-11-26 13:46:20.739  INFO 18096 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : blog :: commentList
+2019-11-26 13:50:08.046  INFO 18096 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:50:08.056  INFO 18096 --- [http-nio-8080-exec-8] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:50:09.850  INFO 18096 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:50:09.862  INFO 18096 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:52:40.775  INFO 18096 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 13:52:40.984  WARN 18096 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-11-26 13:52:41.015  WARN 18096 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-11-26 13:52:41.022  INFO 18096 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 13:52:42.157  INFO 18096 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:52:42.167  INFO 18096 --- [http-nio-8080-exec-7] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:52:51.675  INFO 18096 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:52:51.684  INFO 18096 --- [http-nio-8080-exec-10] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:52:54.324  INFO 18096 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:52:54.333  INFO 18096 --- [http-nio-8080-exec-9] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 13:53:01.056  INFO 18096 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 13:53:01.065  INFO 18096 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 14:30:41.484  INFO 18096 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 14:30:41.653  INFO 18096 --- [http-nio-8080-exec-3] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 14:30:42.649  INFO 18096 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 14:30:42.658  INFO 18096 --- [http-nio-8080-exec-5] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 14:30:50.336  INFO 18096 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.AboutShowController.about', args=[]}
+2019-11-26 14:30:50.342  INFO 18096 --- [http-nio-8080-exec-2] com.qxq.aspect.LogAspect                 : Result : abouts
+2019-11-26 14:30:51.049  INFO 18096 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 14:30:51.058  INFO 18096 --- [http-nio-8080-exec-1] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
+2019-11-26 14:34:31.960  INFO 18096 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2019-11-26 14:34:31.980  INFO 18096 --- [http-nio-8080-exec-4] com.qxq.aspect.LogAspect                 : Result : index
+2019-11-26 14:34:33.061  INFO 18096 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblogs', ip='0:0:0:0:0:0:0:1', classMethod='com.qxq.web.IndexController.newblogs', args=[{}]}
+2019-11-26 14:34:33.071  INFO 18096 --- [http-nio-8080-exec-6] com.qxq.aspect.LogAspect                 : Result : _fragments :: newblogList
